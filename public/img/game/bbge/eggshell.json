@@ -1,0 +1,292 @@
+{"frames": [
+
+{
+	"filename": "chick_egg_A_openboom_00000.png",
+	"frame": {"x":720,"y":660,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00001.png",
+	"frame": {"x":540,"y":660,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00002.png",
+	"frame": {"x":720,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00003.png",
+	"frame": {"x":540,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00004.png",
+	"frame": {"x":720,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00005.png",
+	"frame": {"x":540,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00006.png",
+	"frame": {"x":360,"y":660,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00007.png",
+	"frame": {"x":360,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00008.png",
+	"frame": {"x":360,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00009.png",
+	"frame": {"x":720,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00010.png",
+	"frame": {"x":540,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00011.png",
+	"frame": {"x":360,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00012.png",
+	"frame": {"x":720,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00013.png",
+	"frame": {"x":540,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00014.png",
+	"frame": {"x":360,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00015.png",
+	"frame": {"x":180,"y":660,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00016.png",
+	"frame": {"x":180,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00017.png",
+	"frame": {"x":180,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00018.png",
+	"frame": {"x":180,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00019.png",
+	"frame": {"x":180,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00020.png",
+	"frame": {"x":720,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00021.png",
+	"frame": {"x":540,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00022.png",
+	"frame": {"x":360,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00023.png",
+	"frame": {"x":180,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00024.png",
+	"frame": {"x":0,"y":660,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00025.png",
+	"frame": {"x":0,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00026.png",
+	"frame": {"x":0,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00027.png",
+	"frame": {"x":0,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00028.png",
+	"frame": {"x":0,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00029.png",
+	"frame": {"x":0,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00030.png",
+	"frame": {"x":720,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00031.png",
+	"frame": {"x":540,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00032.png",
+	"frame": {"x":360,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00033.png",
+	"frame": {"x":180,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_A_openboom_00034.png",
+	"frame": {"x":0,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "eggshell.png",
+	"format": "RGBA8888",
+	"size": {"w":900,"h":770},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:829ccc61af201228557ff1ae82ed8fd3:1/1$"
+}
+}

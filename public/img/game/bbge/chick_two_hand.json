@@ -1,0 +1,1292 @@
+{"frames": [
+
+{
+	"filename": "chick_egg_C_hands_00000.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00001.png",
+	"frame": {"x":1620,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00002.png",
+	"frame": {"x":1440,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00003.png",
+	"frame": {"x":1260,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00004.png",
+	"frame": {"x":1260,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00005.png",
+	"frame": {"x":1260,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00006.png",
+	"frame": {"x":1620,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00007.png",
+	"frame": {"x":1440,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00008.png",
+	"frame": {"x":1260,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00009.png",
+	"frame": {"x":1620,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00010.png",
+	"frame": {"x":1440,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00011.png",
+	"frame": {"x":1260,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00012.png",
+	"frame": {"x":1080,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00013.png",
+	"frame": {"x":1080,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00014.png",
+	"frame": {"x":1080,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00015.png",
+	"frame": {"x":1080,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00016.png",
+	"frame": {"x":1080,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00017.png",
+	"frame": {"x":1620,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00018.png",
+	"frame": {"x":1440,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00019.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00020.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00021.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00022.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00023.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00024.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00025.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00026.png",
+	"frame": {"x":1260,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00027.png",
+	"frame": {"x":1080,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00028.png",
+	"frame": {"x":900,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00029.png",
+	"frame": {"x":1080,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00030.png",
+	"frame": {"x":1260,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00031.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00032.png",
+	"frame": {"x":1260,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00033.png",
+	"frame": {"x":900,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00034.png",
+	"frame": {"x":900,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00035.png",
+	"frame": {"x":900,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00036.png",
+	"frame": {"x":900,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00037.png",
+	"frame": {"x":900,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00038.png",
+	"frame": {"x":720,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00039.png",
+	"frame": {"x":720,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00040.png",
+	"frame": {"x":720,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00041.png",
+	"frame": {"x":720,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00042.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00043.png",
+	"frame": {"x":720,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00044.png",
+	"frame": {"x":720,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00045.png",
+	"frame": {"x":720,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00046.png",
+	"frame": {"x":720,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00047.png",
+	"frame": {"x":900,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00048.png",
+	"frame": {"x":720,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00049.png",
+	"frame": {"x":720,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00050.png",
+	"frame": {"x":720,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00051.png",
+	"frame": {"x":540,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00052.png",
+	"frame": {"x":1260,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00053.png",
+	"frame": {"x":1260,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00054.png",
+	"frame": {"x":1620,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00055.png",
+	"frame": {"x":1440,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00056.png",
+	"frame": {"x":1260,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00057.png",
+	"frame": {"x":1620,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00058.png",
+	"frame": {"x":1440,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00059.png",
+	"frame": {"x":1260,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00060.png",
+	"frame": {"x":1080,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00061.png",
+	"frame": {"x":1080,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00062.png",
+	"frame": {"x":1080,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00063.png",
+	"frame": {"x":1080,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00064.png",
+	"frame": {"x":1080,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00065.png",
+	"frame": {"x":1620,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00066.png",
+	"frame": {"x":1440,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00067.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00068.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00069.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00070.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00071.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00072.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00073.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00074.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00075.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00076.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00077.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00078.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00079.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00080.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00081.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00082.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00083.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00084.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00085.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00086.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00087.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00088.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00089.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00090.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00091.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00092.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00093.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00094.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00095.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00096.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00097.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00098.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00099.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00100.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00101.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00102.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00103.png",
+	"frame": {"x":1260,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00104.png",
+	"frame": {"x":1080,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00105.png",
+	"frame": {"x":900,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00106.png",
+	"frame": {"x":1080,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00107.png",
+	"frame": {"x":1260,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00108.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00109.png",
+	"frame": {"x":1260,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00110.png",
+	"frame": {"x":1080,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00111.png",
+	"frame": {"x":900,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00112.png",
+	"frame": {"x":1080,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00113.png",
+	"frame": {"x":1260,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00114.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00115.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00116.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00117.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00118.png",
+	"frame": {"x":540,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00119.png",
+	"frame": {"x":540,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00120.png",
+	"frame": {"x":540,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00121.png",
+	"frame": {"x":540,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00122.png",
+	"frame": {"x":540,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00123.png",
+	"frame": {"x":360,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00124.png",
+	"frame": {"x":360,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00125.png",
+	"frame": {"x":360,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00126.png",
+	"frame": {"x":360,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00127.png",
+	"frame": {"x":360,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00128.png",
+	"frame": {"x":360,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00129.png",
+	"frame": {"x":180,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00130.png",
+	"frame": {"x":180,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00131.png",
+	"frame": {"x":180,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00132.png",
+	"frame": {"x":180,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00133.png",
+	"frame": {"x":180,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00134.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00135.png",
+	"frame": {"x":1620,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00136.png",
+	"frame": {"x":1440,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00137.png",
+	"frame": {"x":1260,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00138.png",
+	"frame": {"x":1260,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00139.png",
+	"frame": {"x":1260,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00140.png",
+	"frame": {"x":1620,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00141.png",
+	"frame": {"x":1440,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00142.png",
+	"frame": {"x":180,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00143.png",
+	"frame": {"x":0,"y":550,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00144.png",
+	"frame": {"x":0,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00145.png",
+	"frame": {"x":0,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00146.png",
+	"frame": {"x":0,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00147.png",
+	"frame": {"x":0,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00148.png",
+	"frame": {"x":0,"y":0,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00149.png",
+	"frame": {"x":180,"y":330,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00150.png",
+	"frame": {"x":180,"y":220,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00151.png",
+	"frame": {"x":180,"y":110,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00152.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00153.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00154.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00155.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00156.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00157.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00158.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+},
+{
+	"filename": "chick_egg_C_hands_00159.png",
+	"frame": {"x":1440,"y":440,"w":180,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":110},
+	"sourceSize": {"w":180,"h":110}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "chick_two_hand.png",
+	"format": "RGBA8888",
+	"size": {"w":1800,"h":660},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:18db2dbd443e6af10dd0f5eb16771c36:1/1$"
+}
+}
