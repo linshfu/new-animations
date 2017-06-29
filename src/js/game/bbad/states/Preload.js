@@ -1,6 +1,14 @@
-import PreloadState from '../../PreloadState'
+/* global Phaser */
 
-export default class Preload extends PreloadState {
+import Loading from '../objs/Loading'
+
+export default class Preload extends Phaser.State {
+  init() {
+    this.game.load.onLoadStart.add(this.loadStart, this)
+    this.game.load.onFileComplete.add(this.fileComplete, this)
+    this.game.load.onLoadComplete.add(this.loadComplete, this)
+  }
+
   preload() {
     this.game.load.audio('bgm', 'sound/bbge/bgm.mp3')
     this.game.load.audio('bgm20', 'sound/bbge/bgm20.mp3')
@@ -54,7 +62,16 @@ export default class Preload extends PreloadState {
     })
   }
 
-  exit() {
-    this.state.start('Main')
+  loadStart() {
+    this.loading = new Loading(this.game)
+    this.game.add.existing(this.loading)
+  }
+
+  fileComplete(percent) {
+    this.loading.updateProgress(percent)
+  }
+
+  loadComplete() {
+    this.game.events.emit('GAME_STATE_LOADCOMPLETE')
   }
 }

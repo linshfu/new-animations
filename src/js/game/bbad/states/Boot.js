@@ -1,6 +1,10 @@
-import BootState from '../../BootState'
+/* global Phaser */
 
-export default class Boot extends BootState {
+export default class Boot extends Phaser.State {
+  preload() {
+    this.game.load.image('bbinlogo', '/img/game/loadingbg.png')
+  }
+
   create() {
     this.game.stage.visibilityChange = (event) => {
       if (event.type.includes('visibilitychange')) {
