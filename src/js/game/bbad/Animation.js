@@ -13,11 +13,22 @@ import RoundingTime from './states/RoundingTime'
  * @param {object} [options] - 動畫其他選項
  */
 
+const defaults = {
+  isMute: false,
+  lang: 'zh-cn'
+}
+
 export default class Animation extends Phaser.Game {
   constructor(width, height, parent, options) {
     super(width, height, Phaser.AUTO, parent, null, false)
 
+    if (options instanceof Object) {
+      this.opt = Object.assign({}, defaults, options)
+    }
+
     this.events = new Events(this)
+
+    this.onLoadComplete = () => {}
 
     this.state.add('Boot', Boot, false)
     this.state.add('Preload', Preload, false)
@@ -33,5 +44,10 @@ export default class Animation extends Phaser.Game {
 
   roundingTime() {
     this.events.emit('GAME_STATE_ROUNDING')
+  }
+
+  updateDistr(data) {
+    if (this.state.current !== 'Main') return
+    this.events.emit('GAME_UPDATE_DISTR', data)
   }
 }

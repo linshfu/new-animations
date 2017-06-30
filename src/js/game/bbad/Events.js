@@ -3,10 +3,7 @@ import { EventEmitter } from 'events'
 const GAME_STATE_LOADCOMPLETE = 'GAME_STATE_LOADCOMPLETE'
 const GAME_STATE_START = 'GAME_STATE_START'
 const GAME_STATE_ROUNDING = 'GAME_STATE_ROUNDING'
-
-function* startMain(r) {
-  return (r) ? true : yield false
-}
+const GAME_UPDATE_DISTR = 'GAME_UPDATE_DISTR'
 
 export default class Events extends EventEmitter {
   constructor(game) {
@@ -19,26 +16,33 @@ export default class Events extends EventEmitter {
     }
 
     this.once(GAME_STATE_LOADCOMPLETE, this.onLoadComplete)
-    this.on(GAME_STATE_START, this.onStart)
-    this.on(GAME_STATE_ROUNDING, this.onRounding)
+    this.on(GAME_STATE_START, this.startAnim)
+    this.on(GAME_STATE_ROUNDING, this.roundingTime)
+    this.on(GAME_UPDATE_DISTR, this.updateDistr)
   }
 
   onLoadComplete() {
     this.state.isLoadComplete = true
+    this.game.onLoadComplete()
   }
 
-  onRounding() {
-    this.game.state.start('RoundingTime')
+  roundingTime() {
+    if (this.state.isLoadComplete) {
+      this.game.state.start('RoundingTime')
+    } else {
+      setTimeout(() => this.emit(GAME_STATE_ROUNDING), 100)
+    }
   }
 
-  onStart() {
-    const t = startMain(this.state.isLoadComplete)
-    const isLoadComplete = t.next()
-
-    if (isLoadComplete.value) {
+  startAnim() {
+    if (this.state.isLoadComplete) {
       this.game.state.start('Main')
     } else {
-      setTimeout(() => this.onStart(), 100)
+      setTimeout(() => this.emit(GAME_STATE_START), 100)
     }
+  }
+
+  updateDistr(num) {
+    this.game.distr.updateDistr(num)
   }
 }
