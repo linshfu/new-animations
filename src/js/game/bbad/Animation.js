@@ -46,8 +46,8 @@ export default class Animation extends Phaser.Game {
     this.events.emit('GAME_STATE_ROUNDING')
   }
 
-  updateDistr(data) {
+  updateDistrFirst(data) {
     if (this.state.current !== 'Main') return
-    this.events.emit('GAME_UPDATE_DISTR', data)
+    this.events.emit('GAME_UPDATE_DISTRFIRST', data)
   }
 }

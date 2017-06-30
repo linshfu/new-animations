@@ -1,6 +1,6 @@
 /* global Phaser */
 
-import ProgressBar from '../objs/ProgressBar'
+import Distr from '../objs/Distr'
 
 export default class Main extends Phaser.State {
   create() {
@@ -8,7 +8,10 @@ export default class Main extends Phaser.State {
       fill: 'white'
     })
 
-    this.game.distr = new ProgressBar(this.game, 2, 100, this.game.opt.distr.odd)
-    this.game.add.existing(this.game.distr)
+    this.game.distrFirstMaster = new Distr(this.game, 20, 200, 0xb83636, this.game.opt.distr.master)
+    this.game.add.existing(this.game.distrFirstMaster)
+
+    this.game.distrFirstGuest = new Distr(this.game, 200, 200, 0x4d79ca, this.game.opt.distr.guest)
+    this.game.add.existing(this.game.distrFirstGuest)
   }
 }

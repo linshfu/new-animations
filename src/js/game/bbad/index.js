@@ -14,14 +14,19 @@ export default class Index extends GameIndex {
   componentDidMount() {
     this.animation = new Animation(580, 468, this.animationDOM, {
       distr: {
-        odd: 100
+        master: {
+          goal: 10,
+          hit: 20,
+          miss: 30
+        },
+        guest: {
+          goal: 10,
+          hit: 20,
+          miss: 30
+        }
       }
     })
     this.animation.start()
-  }
-
-  async startAnim() {
-    await this.animation.start()
   }
 
   handleStartBtn() {
@@ -33,7 +38,18 @@ export default class Index extends GameIndex {
   }
 
   handleDistrBtn() {
-    this.animation.updateDistr(80)
+    this.animation.updateDistrFirst({
+      master: {
+        goal: 40,
+        hit: 50,
+        miss: 10
+      },
+      guest: {
+        goal: 33,
+        hit: 33,
+        miss: 34
+      }
+    })
   }
 
   render() {

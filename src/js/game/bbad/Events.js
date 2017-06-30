@@ -3,7 +3,7 @@ import { EventEmitter } from 'events'
 const GAME_STATE_LOADCOMPLETE = 'GAME_STATE_LOADCOMPLETE'
 const GAME_STATE_START = 'GAME_STATE_START'
 const GAME_STATE_ROUNDING = 'GAME_STATE_ROUNDING'
-const GAME_UPDATE_DISTR = 'GAME_UPDATE_DISTR'
+const GAME_UPDATE_DISTRFIRST = 'GAME_UPDATE_DISTRFIRST'
 
 export default class Events extends EventEmitter {
   constructor(game) {
@@ -18,7 +18,7 @@ export default class Events extends EventEmitter {
     this.once(GAME_STATE_LOADCOMPLETE, this.onLoadComplete)
     this.on(GAME_STATE_START, this.startAnim)
     this.on(GAME_STATE_ROUNDING, this.roundingTime)
-    this.on(GAME_UPDATE_DISTR, this.updateDistr)
+    this.on(GAME_UPDATE_DISTRFIRST, this.updateDistrFirst)
   }
 
   onLoadComplete() {
@@ -42,7 +42,8 @@ export default class Events extends EventEmitter {
     }
   }
 
-  updateDistr(num) {
-    this.game.distr.updateDistr(num)
+  updateDistrFirst(data) {
+    this.game.distrFirstMaster.updateAll(data.master)
+    this.game.distrFirstGuest.updateAll(data.guest)
   }
 }
