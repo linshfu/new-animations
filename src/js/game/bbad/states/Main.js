@@ -2,6 +2,7 @@
 
 import Distr from '../objs/Distr'
 import Soccer from '../objs/Soccer'
+import Poker from '../objs/Poker'
 
 export default class Main extends Phaser.State {
   create() {
@@ -19,5 +20,9 @@ export default class Main extends Phaser.State {
     // ball
     this.ball = new Soccer(this.game, this.game.world.centerX, 100)
     this.game.add.existing(this.ball)
+
+    // poker
+    this.poker = new Poker(this.game, 300, 200)
+    this.game.add.existing(this.poker)
   }
 }
