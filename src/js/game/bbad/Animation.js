@@ -1,5 +1,5 @@
 import Events from './Events'
-import * as Phaser from '../../libs/phaser-shim.js'
+import * as Phaser from '../../libs/phaser-shim'
 import Boot from './states/Boot'
 import Preload from './states/Preload'
 import Main from './states/Main'

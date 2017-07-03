@@ -12,16 +12,16 @@ export default class Index extends GameIndex {
   }
 
   componentDidMount() {
-    this.animation = new Animation(580, 468, this.animationDOM, {
+    this.animation = new Animation(750, 390, this.animationDOM, {
       distr: {
         master: {
-          goal: 10,
+          goal: 80,
           hit: 20,
-          miss: 30
+          miss: 0
         },
         guest: {
           goal: 10,
-          hit: 20,
+          hit: 60,
           miss: 30
         }
       }
