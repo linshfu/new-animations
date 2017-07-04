@@ -19,6 +19,10 @@ export default class Poker extends Phaser.Group {
     this.addMultiple([this.back])
   }
 
+  suit([suit, num]) {
+    this.back.loadTexture(`${suit}_${num}`)
+  }
+
   filpFront() {
     return new Promise((resolve) => {
       const animFront = this.game.add.tween(this.back.scale)

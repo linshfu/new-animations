@@ -42,8 +42,8 @@ export default class Animation extends Phaser.Game {
     this.events.emit('GAME_STATE_START')
   }
 
-  roundingTime() {
-    this.events.emit('GAME_STATE_ROUNDING')
+  roundingTime(res) {
+    this.events.emit('GAME_STATE_ROUNDING', res)
   }
 
   updateDistrFirst(data) {

@@ -39,10 +39,11 @@ export default class Main extends Phaser.State {
   drawing(res) {
     if (this.isDrawing) return
 
+    this.game.result = res
     this.ball.alpha = 0
+
     this.cardGroupHost.drawingFirst(res.host)
     this.cardGroupGuest.drawingFirst(res.guest).then(() => {
-      console.log(res)
       this.state.start('RoundingTime')
     })
 

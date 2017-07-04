@@ -36,7 +36,16 @@ export default class Index extends GameIndex {
   }
 
   handleRoundingBtn() {
-    this.animation.roundingTime()
+    this.animation.roundingTime({
+      host: {
+        goalpostleft: ['diamonds', 10],
+        goalpostright: ["hearts", 3]
+      },
+      guest: {
+        goalpostleft: ['clubs', 5],
+        goalpostright: ["diamonds", 1]
+      }
+    })
   }
 
   handleDistrBtn() {

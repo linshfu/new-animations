@@ -30,8 +30,9 @@ export default class Events extends EventEmitter {
     this.game.onLoadComplete()
   }
 
-  roundingTime() {
+  roundingTime(res) {
     if (this.state.isLoadComplete) {
+      this.game.result = res
       this.game.state.start('RoundingTime')
     } else {
       setTimeout(() => this.emit(GAME_STATE_ROUNDING), 100)
