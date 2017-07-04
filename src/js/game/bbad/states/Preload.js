@@ -58,6 +58,6 @@ export default class Preload extends Phaser.State {
   }
 
   loadComplete() {
-    this.game.events.emit('GAME_STATE_LOADCOMPLETE')
+    this.state.start('Ready')
   }
 }

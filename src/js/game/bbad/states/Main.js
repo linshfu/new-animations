@@ -3,7 +3,6 @@
 import Distr from '../objs/Distr'
 import Soccer from '../objs/Soccer'
 import CardGroup from '../objs/CardGroup'
-import Countdown from '../objs/Countdown'
 
 export default class Main extends Phaser.State {
   create() {
@@ -30,10 +29,14 @@ export default class Main extends Phaser.State {
 
     this.cardGroupGuest = new CardGroup(this.game, 400, 0)
     this.game.add.existing(this.cardGroupGuest)
+  }
 
-    // Countdown
-    this.countdown = new Countdown(this.game, 400, 0)
-    this.game.add.existing(this.countdown)
+  update() {
+    if (this.game.cd.isCountingdown) {
+      this.ball.stop()
+    } else {
+      this.ball.start()
+    }
   }
 
   drawing(res) {
@@ -48,12 +51,5 @@ export default class Main extends Phaser.State {
     })
 
     this.isDrawing = true
-  }
-
-  countingDown(sec) {
-    this.countdown.timingStarts(sec).then(() => {
-      this.ball.start()
-    })
-    this.ball.stop()
   }
 }

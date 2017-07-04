@@ -2,6 +2,7 @@ import Events from './Events'
 import * as Phaser from '../../libs/phaser-shim'
 import Boot from './states/Boot'
 import Preload from './states/Preload'
+import Ready from './states/Ready'
 import Main from './states/Main'
 import RoundingTime from './states/RoundingTime'
 
@@ -32,6 +33,7 @@ export default class Animation extends Phaser.Game {
 
     this.state.add('Boot', Boot, false)
     this.state.add('Preload', Preload, false)
+    this.state.add('Ready', Ready, false)
     this.mainState = this.state.add('Main', Main, false)
     this.state.add('RoundingTime', RoundingTime, false)
 
@@ -56,6 +58,6 @@ export default class Animation extends Phaser.Game {
   }
 
   countdown(sec) {
-    this.events.emit('GAME_STATE_COUNTDOWN', sec)
+    return this.cd.timingStarts(sec)
   }
 }

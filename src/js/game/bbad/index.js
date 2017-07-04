@@ -82,7 +82,9 @@ export default class Index extends GameIndex {
       max = Math.floor(max);
       return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
     }
-    this.animation.countdown(getRandomInt(1, 5))
+    this.animation.countdown(getRandomInt(1, 5)).then(() => {
+      // end
+    })
   }
 
   render() {
