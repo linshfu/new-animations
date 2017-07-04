@@ -15,7 +15,7 @@ export default class Index extends GameIndex {
   componentDidMount() {
     this.animation = new Animation(750, 390, this.animationDOM, {
       distr: {
-        master: {
+        host: {
           goal: 80,
           hit: 20,
           miss: 0
@@ -40,7 +40,7 @@ export default class Index extends GameIndex {
 
   handleDistrBtn() {
     this.animation.updateDistrFirst({
-      master: {
+      host: {
         goal: 40,
         hit: 50,
         miss: 10
@@ -55,7 +55,7 @@ export default class Index extends GameIndex {
 
   handleDrawingFirstBtn() {
     this.animation.drawingFirst({
-      master: {
+      host: {
         goalpostleft: ['diamonds', 10],
         goalpostright: ["hearts", 3]
       },

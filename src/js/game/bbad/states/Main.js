@@ -14,8 +14,8 @@ export default class Main extends Phaser.State {
     this.isDrawing = false
 
     // distr
-    this.game.distrFirstMaster = new Distr(this.game, 20, 150, 0xb83636, this.game.opt.distr.master)
-    this.game.add.existing(this.game.distrFirstMaster)
+    this.game.distrFirstHost = new Distr(this.game, 20, 150, 0xb83636, this.game.opt.distr.host)
+    this.game.add.existing(this.game.distrFirstHost)
 
     this.game.distrFirstGuest = new Distr(this.game, 650, 150, 0x4d79ca, this.game.opt.distr.guest)
     this.game.add.existing(this.game.distrFirstGuest)
@@ -25,8 +25,8 @@ export default class Main extends Phaser.State {
     this.game.add.existing(this.ball)
 
     // CardGroup
-    this.cardGroupMaster = new CardGroup(this.game, 0, 0)
-    this.game.add.existing(this.cardGroupMaster)
+    this.cardGroupHost = new CardGroup(this.game, 0, 0)
+    this.game.add.existing(this.cardGroupHost)
 
     this.cardGroupGuest = new CardGroup(this.game, 400, 0)
     this.game.add.existing(this.cardGroupGuest)
@@ -39,7 +39,7 @@ export default class Main extends Phaser.State {
   drawing(res) {
     if (this.isDrawing) return
 
-    this.cardGroupMaster.drawingFirst(res.master)
+    this.cardGroupHost.drawingFirst(res.host)
     this.cardGroupGuest.drawingFirst(res.guest)
 
     this.isDrawing = true
