@@ -3,6 +3,7 @@
 import Distr from '../objs/Distr'
 import Soccer from '../objs/Soccer'
 import Poker from '../objs/Poker'
+import Countdown from '../objs/Countdown'
 
 export default class Main extends Phaser.State {
   create() {
@@ -24,5 +25,9 @@ export default class Main extends Phaser.State {
     // poker
     this.poker = new Poker(this.game, 300, 200)
     this.game.add.existing(this.poker)
+
+    // Countdown
+    this.countdown = new Countdown(this.game, 400, 0)
+    this.game.add.existing(this.countdown)
   }
 }
