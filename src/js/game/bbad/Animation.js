@@ -54,4 +54,8 @@ export default class Animation extends Phaser.Game {
   drawingFirst(res) {
     this.events.emit('GAME_STATE_DRAWINGFIRST', res)
   }
+
+  countdown(sec) {
+    this.events.emit('GAME_STATE_COUNTDOWN', sec)
+  }
 }

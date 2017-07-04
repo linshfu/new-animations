@@ -5,6 +5,7 @@ export default class Countdown extends Phaser.Group {
     super(game)
 
     this.game = game
+    this.isCountingdown = false
 
     const mask = new Phaser.Graphics(this.game, 0, 0)
     mask.beginFill(0x333333, 0.5)
@@ -33,6 +34,8 @@ export default class Countdown extends Phaser.Group {
 
   timingStarts(n = 5) {
     return new Promise((resolve) => {
+      if (this.isCountingdown) return
+
       this.show()
 
       this.num = parseInt(n, 10)
@@ -41,18 +44,19 @@ export default class Countdown extends Phaser.Group {
 
       this.timer = new Phaser.Timer(this.game)
       this.game.time.add(this.timer)
-      this.timer.repeat(Phaser.Timer.SECOND, this.num - 1, this.updateCounter, this)
+      this.timer.repeat(Phaser.Timer.SECOND, this.num, this.updateCounter, this)
       this.timer.onComplete.add(() => {
-        setTimeout(() => {
-          this.hide()
-          resolve()
-        }, 1000)
+        this.hide()
+        this.isCountingdown = false
+        resolve()
       })
       this.timer.start()
+      this.isCountingdown = true
     })
   }
 
   updateCounter() {
+    if (!(this.num - 1)) return
     this.numImg.loadTexture(`countdown_num_${this.num - 1}`)
     this.num --
   }

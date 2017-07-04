@@ -20,13 +20,8 @@ export default class CardGroup extends Phaser.Group {
     try {
       await this.getAt(0).filp(res.goalpostleft)
       await this.getAt(2).filp(res.goalpostright)
-      this.end()
     } catch (e) {
       console.error(e)
     }
-  }
-
-  end() {
-    console.log('end')
   }
 }

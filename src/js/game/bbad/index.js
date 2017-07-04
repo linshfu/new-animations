@@ -10,6 +10,7 @@ export default class Index extends GameIndex {
     this.handleRoundingBtn = ::this.handleRoundingBtn
     this.handleDistrBtn = ::this.handleDistrBtn
     this.handleDrawingFirstBtn = ::this.handleDrawingFirstBtn
+    this.handleCountdownBtn = ::this.handleCountdownBtn
   }
 
   componentDidMount() {
@@ -66,6 +67,15 @@ export default class Index extends GameIndex {
     })
   }
 
+  handleCountdownBtn() {
+    const getRandomInt = (min, max) => {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+    }
+    this.animation.countdown(getRandomInt(1, 5))
+  }
+
   render() {
     return (
       <div id="gameResults-wrap">
@@ -75,6 +85,7 @@ export default class Index extends GameIndex {
           <button onClick={this.handleDistrBtn}>Update Distr</button>
         </div>
         <div>
+          <button onClick={this.handleCountdownBtn}>Countdown</button>
           <button onClick={this.handleDrawingFirstBtn}>Drawing 1</button>
         </div>
         <div ref={(r) => { this.animationDOM = r }}></div>
