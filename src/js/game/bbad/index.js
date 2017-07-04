@@ -9,6 +9,7 @@ export default class Index extends GameIndex {
     this.handleStartBtn = ::this.handleStartBtn
     this.handleRoundingBtn = ::this.handleRoundingBtn
     this.handleDistrBtn = ::this.handleDistrBtn
+    this.handleDrawingFirstBtn = ::this.handleDrawingFirstBtn
   }
 
   componentDidMount() {
@@ -52,6 +53,19 @@ export default class Index extends GameIndex {
     })
   }
 
+  handleDrawingFirstBtn() {
+    this.animation.drawingFirst({
+      master: {
+        goalpostleft: ['diamonds', 10],
+        goalpostright: ["hearts", 3]
+      },
+      guest: {
+        goalpostleft: ['clubs', 5],
+        goalpostright: ["diamonds", 1]
+      }
+    })
+  }
+
   render() {
     return (
       <div id="gameResults-wrap">
@@ -59,6 +73,9 @@ export default class Index extends GameIndex {
           <button onClick={this.handleStartBtn}>Start</button>
           <button onClick={this.handleRoundingBtn}>Rounding Time</button>
           <button onClick={this.handleDistrBtn}>Update Distr</button>
+        </div>
+        <div>
+          <button onClick={this.handleDrawingFirstBtn}>Drawing 1</button>
         </div>
         <div ref={(r) => { this.animationDOM = r }}></div>
       </div>
