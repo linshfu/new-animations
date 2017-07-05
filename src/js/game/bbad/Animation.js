@@ -35,7 +35,7 @@ export default class Animation extends Phaser.Game {
     this.state.add('Preload', Preload, false)
     this.state.add('Ready', Ready, false)
     this.mainState = this.state.add('Main', Main, false)
-    this.state.add('RoundingTime', RoundingTime, false)
+    this.roundingState = this.state.add('RoundingTime', RoundingTime, false)
 
     this.state.start('Boot')
   }
@@ -55,6 +55,10 @@ export default class Animation extends Phaser.Game {
 
   drawingFirst(res) {
     this.events.emit('GAME_STATE_DRAWINGFIRST', res)
+  }
+
+  drawingSecond(res) {
+    this.events.emit('GAME_STATE_DRAWINGSECOND', res)
   }
 
   countdown(sec) {

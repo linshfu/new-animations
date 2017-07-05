@@ -40,12 +40,14 @@ export default class Preload extends Phaser.State {
     })
 
     // 結果
-    const lang = ['en-us', 'es', 'id', 'ja-jp', 'ko-kr', 'th', 'vi', 'zh-cn', 'zh-tw']
+    const lang = ['zh-cn']
     lang.forEach((l) => {
-      this.game.load.image(`${l}_result_hit`, `lang/${l}/result_agoalposthit.png`)
-      this.game.load.image(`${l}_result_goal`, `lang/${l}/result_goal.png`)
-      this.game.load.image(`${l}_result_miss`, `lang/${l}/result_miss.png`)
+      this.game.load.image(`${l}_result_egalite`, `lang/${l}/result_egalite.png`)
+      this.game.load.image(`${l}_result_guest`, `lang/${l}/result_guest.png`)
+      this.game.load.image(`${l}_result_host`, `lang/${l}/result_host.png`)
     })
+
+    this.game.load.image('scoreboard', 'scoreboard.png')
   }
 
   loadStart() {

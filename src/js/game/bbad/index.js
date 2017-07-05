@@ -10,6 +10,7 @@ export default class Index extends GameIndex {
     this.handleRoundingBtn = ::this.handleRoundingBtn
     this.handleDistrBtn = ::this.handleDistrBtn
     this.handleDrawingFirstBtn = ::this.handleDrawingFirstBtn
+    this.handleDrawingSecondBtn = ::this.handleDrawingSecondBtn
     this.handleCountdownBtn = ::this.handleCountdownBtn
   }
 
@@ -67,12 +68,30 @@ export default class Index extends GameIndex {
     this.animation.drawingFirst({
       host: {
         goalpostleft: ['diamonds', 10],
-        goalpostright: ["hearts", 3]
+        goalpostright: ['hearts', 3]
       },
       guest: {
         goalpostleft: ['clubs', 5],
-        goalpostright: ["diamonds", 1]
+        goalpostright: ['diamonds', 1]
       }
+    })
+  }
+
+  handleDrawingSecondBtn() {
+    this.animation.drawingSecond({
+      host: {
+        ball: ['clubs', 5],
+        goalpostleft: ['diamonds', 10],
+        goalpostright: ['hearts', 3],
+        shootresult: 'is-goalIn'
+      },
+      guest: {
+        ball: ['spades', 6],
+        goalpostleft: ['clubs', 5],
+        goalpostright: ['diamonds', 1],
+        shootresult: 'is-goalIn'
+      },
+      winresult: 'egalite'
     })
   }
 
@@ -98,6 +117,7 @@ export default class Index extends GameIndex {
         <div>
           <button onClick={this.handleCountdownBtn}>Countdown</button>
           <button onClick={this.handleDrawingFirstBtn}>Drawing 1</button>
+          <button onClick={this.handleDrawingSecondBtn}>Drawing 2</button>
         </div>
         <div ref={(r) => { this.animationDOM = r }}></div>
       </div>

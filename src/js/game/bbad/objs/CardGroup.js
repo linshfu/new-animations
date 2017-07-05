@@ -30,4 +30,12 @@ export default class CardGroup extends Phaser.Group {
       console.error(e)
     }
   }
+
+  async drawingSecond(res) {
+    try {
+      await this.getAt(1).filp(res.ball)
+    } catch (e) {
+      console.error(e)
+    }
+  }
 }
