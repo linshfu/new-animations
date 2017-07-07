@@ -13,10 +13,10 @@ export default class RoundingTime extends Phaser.State {
     this.isDrawing = false
 
     // CardGroup
-    this.cardGroupHost = new CardGroup(this.game, 0, 0, this.game.result.host)
+    this.cardGroupHost = new CardGroup(this.game, 0, 0, this.game.result.home)
     this.game.add.existing(this.cardGroupHost)
 
-    this.cardGroupGuest = new CardGroup(this.game, 400, 0, this.game.result.guest)
+    this.cardGroupGuest = new CardGroup(this.game, 400, 0, this.game.result.away)
     this.game.add.existing(this.cardGroupGuest)
 
     // Scoreboard
@@ -28,8 +28,8 @@ export default class RoundingTime extends Phaser.State {
 
   showScoreboard(res) {
     return new Promise((resolve) => {
-      this.scoreboard.setHostScore(get(res, 'host.shootresult'))
-      this.scoreboard.setGuestScore(get(res, 'guest.shootresult'))
+      this.scoreboard.setHostScore(get(res, 'home.shootresult'))
+      this.scoreboard.setGuestScore(get(res, 'away.shootresult'))
 
       const tween = this.game.add.tween(this.scoreboard).to({ y: 250 }, 250, Phaser.Easing.Exponential.Out)
       tween.onComplete.add(() => {
@@ -58,8 +58,8 @@ export default class RoundingTime extends Phaser.State {
   async drawing(res) {
     if (this.isDrawing) return
 
-    await this.cardGroupHost.drawingSecond(res.host)
-    await this.cardGroupGuest.drawingSecond(res.guest)
+    await this.cardGroupHost.drawingSecond(res.home)
+    await this.cardGroupGuest.drawingSecond(res.away)
     await this.showScoreboard(res)
     await this.showResult(get(res, 'winresult'))
     this.game.state.start('Main')

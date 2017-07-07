@@ -15,14 +15,14 @@ export default class Index extends GameIndex {
   }
 
   componentDidMount() {
-    this.animation = new Animation(750, 390, this.animationDOM, {
+    this.animation = new Animation(750, 326, this.animationDOM, {
       distr: {
-        host: {
+        home: {
           goal: 80,
           hit: 20,
           miss: 0
         },
-        guest: {
+        away: {
           goal: 10,
           hit: 60,
           miss: 30
@@ -38,11 +38,11 @@ export default class Index extends GameIndex {
 
   handleRoundingBtn() {
     this.animation.roundingTime({
-      host: {
+      home: {
         goalpostleft: ['diamonds', 10],
         goalpostright: ["hearts", 3]
       },
-      guest: {
+      away: {
         goalpostleft: ['clubs', 5],
         goalpostright: ["diamonds", 1]
       }
@@ -51,12 +51,12 @@ export default class Index extends GameIndex {
 
   handleDistrBtn() {
     this.animation.updateDistrFirst({
-      host: {
+      home: {
         goal: 40,
         hit: 50,
         miss: 10
       },
-      guest: {
+      away: {
         goal: 33,
         hit: 33,
         miss: 34
@@ -66,11 +66,11 @@ export default class Index extends GameIndex {
 
   handleDrawingFirstBtn() {
     this.animation.drawingFirst({
-      host: {
+      home: {
         goalpostleft: ['diamonds', 10],
         goalpostright: ['hearts', 3]
       },
-      guest: {
+      away: {
         goalpostleft: ['clubs', 5],
         goalpostright: ['diamonds', 1]
       }
@@ -79,19 +79,19 @@ export default class Index extends GameIndex {
 
   handleDrawingSecondBtn() {
     this.animation.drawingSecond({
-      host: {
+      home: {
         ball: ['clubs', 5],
         goalpostleft: ['diamonds', 10],
         goalpostright: ['hearts', 3],
         shootresult: 'is-goalIn'
       },
-      guest: {
+      away: {
         ball: ['spades', 6],
         goalpostleft: ['clubs', 5],
         goalpostright: ['diamonds', 1],
         shootresult: 'is-goalIn'
       },
-      winresult: 'egalite'
+      winresult: 'draw'
     })
   }
 

@@ -49,8 +49,8 @@ export default class Events extends EventEmitter {
 
   updateDistrFirst(data) {
     this.game.opt.distr = data
-    this.game.distrFirstHost.updateAll(data.host)
-    this.game.distrFirstGuest.updateAll(data.guest)
+    this.game.distrFirstHost.updateAll(data.home)
+    this.game.distrFirstGuest.updateAll(data.away)
   }
 
   drawingFirst(res) {

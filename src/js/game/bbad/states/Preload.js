@@ -12,17 +12,14 @@ export default class Preload extends Phaser.State {
   preload() {
     this.game.load.path = '/img/game/bbad/'
 
-    this.game.load.image('game_day_bg', 'game_day_bg.png')
-    this.game.load.image('soccer_ball', 'soccer_ball.png')
-
-    // sound
-    this.game.load.spritesheet('btn_day_voice_open', 'btn_day_voice_open.png', 32, 32)
-    this.game.load.spritesheet('btn_day_voice_close', 'btn_day_voice_close.png', 32, 32)
+    this.game.load.image('game_bg', 'game_bg.png')
+    this.game.load.image('soccer_ball', 'soccer.png')
 
     // 倒數
-    this.game.load.image('countdown_hand', 'countdown_hand.png')
-    for (let i=1; i<=5; i++) {
-      this.game.load.image(`countdown_num_${i}`, `countdown_num_${i}.png`)
+    this.game.load.image('countdown_hand', 'stopwatch/countdown_hand_1.png')
+    this.game.load.image('countdown_hand2', 'stopwatch/countdown_hand_2.png')
+    for (let i=0; i<=5; i++) {
+      this.game.load.image(`countdown_num_${i}`, `stopwatch/countdown_num_${i}.png`)
     }
 
     // 投注分佈
@@ -42,9 +39,9 @@ export default class Preload extends Phaser.State {
     // 結果
     const lang = ['zh-cn']
     lang.forEach((l) => {
-      this.game.load.image(`${l}_result_egalite`, `lang/${l}/result_egalite.png`)
-      this.game.load.image(`${l}_result_guest`, `lang/${l}/result_guest.png`)
-      this.game.load.image(`${l}_result_host`, `lang/${l}/result_host.png`)
+      this.game.load.image(`${l}_result_draw`, `lang/${l}/result_draw.png`)
+      this.game.load.image(`${l}_result_away`, `lang/${l}/result_away.png`)
+      this.game.load.image(`${l}_result_home`, `lang/${l}/result_home.png`)
     })
 
     this.game.load.image('scoreboard', 'scoreboard.png')

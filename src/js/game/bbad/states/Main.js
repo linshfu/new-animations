@@ -13,10 +13,10 @@ export default class Main extends Phaser.State {
     this.isDrawing = false
 
     // distr
-    this.game.distrFirstHost = new Distr(this.game, 20, 150, 0xb83636, this.game.opt.distr.host)
+    this.game.distrFirstHost = new Distr(this.game, 20, 150, 0xb83636, this.game.opt.distr.home)
     this.game.add.existing(this.game.distrFirstHost)
 
-    this.game.distrFirstGuest = new Distr(this.game, 650, 150, 0x4d79ca, this.game.opt.distr.guest)
+    this.game.distrFirstGuest = new Distr(this.game, 650, 150, 0x4d79ca, this.game.opt.distr.away)
     this.game.add.existing(this.game.distrFirstGuest)
 
     // ball
@@ -45,8 +45,8 @@ export default class Main extends Phaser.State {
     this.game.result = res
     this.ball.alpha = 0
 
-    this.cardGroupHost.drawingFirst(res.host)
-    this.cardGroupGuest.drawingFirst(res.guest).then(() => {
+    this.cardGroupHost.drawingFirst(res.home)
+    this.cardGroupGuest.drawingFirst(res.away).then(() => {
       this.state.start('RoundingTime')
     })
 

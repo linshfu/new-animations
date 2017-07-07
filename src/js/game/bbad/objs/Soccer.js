@@ -10,7 +10,6 @@ export default class Soccer extends Phaser.Group {
     this.index = 0
 
     this.ball = new Phaser.Sprite(this.game, 0, 0, 'soccer_ball')
-    this.ball.scale.set(0.5)
     this.ball.anchor.set(0.5)
 
     this.game.behaviorPlugin.enable(this.ball)
