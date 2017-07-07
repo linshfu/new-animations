@@ -91,7 +91,8 @@ export default class Index extends GameIndex {
         goalpostright: ['diamonds', 1],
         shootresult: 'is-goalIn'
       },
-      winresult: 'draw'
+      winresult: 'draw',
+      firstkick: 'home'
     })
   }
 

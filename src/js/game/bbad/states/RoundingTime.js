@@ -3,6 +3,7 @@
 import { get } from 'lodash'
 import CardGroup from '../objs/CardGroup'
 import Scoreboard from '../objs/Scoreboard'
+import CoinFlip from '../objs/CoinFlip'
 
 export default class RoundingTime extends Phaser.State {
   create() {
@@ -18,6 +19,10 @@ export default class RoundingTime extends Phaser.State {
     // Scoreboard
     this.scoreboard = new Scoreboard(this.game, 254, -118)
     this.game.add.existing(this.scoreboard)
+
+    // CoinFlip
+    this.coinFlip = new CoinFlip(this.game, 319, 150)
+    this.game.add.existing(this.coinFlip)
 
     this.resultImg = this.game.add.sprite(0, this.game.height, null)
   }
@@ -49,7 +54,7 @@ export default class RoundingTime extends Phaser.State {
       tween.onComplete.add(() => {
         setTimeout(() => {
           resolve()
-        }, 1000)
+        }, 500)
       })
       tween.start()
     })
@@ -58,6 +63,7 @@ export default class RoundingTime extends Phaser.State {
   async drawing(res) {
     if (this.isDrawing) return
 
+    await this.coinFlip.flip(get(res, 'firstkick'))
     await this.cardGroupHost.drawingSecond(res.home)
     await this.cardGroupGuest.drawingSecond(res.away)
     await this.showScoreboard(res)
