@@ -16,7 +16,7 @@ export default class Countdown extends Phaser.Group {
     handLayer.top = y
 
     const bg = new Phaser.Sprite(this.game, 0, 0, 'countdown_hand')
-    this.numImg = new Phaser.Sprite(this.game, 64, 94, 'countdown_num_5')
+    this.numImg = new Phaser.Sprite(this.game, 93, 107, 'countdown_num_5')
     handLayer.addMultiple([bg, this.numImg])
 
     this.addMultiple([mask, handLayer])

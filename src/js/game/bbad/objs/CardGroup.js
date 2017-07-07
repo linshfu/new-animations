@@ -12,8 +12,8 @@ export default class CardGroup extends Phaser.Group {
     this.result = result
 
     for (let i = 0; i < 3; i++) {
-      const y = (i === 1) ? 30 : 0
-      this.addChild(new Poker(this.game, i * 110, y))
+      const y = (i === 1) ? 19 : 0
+      this.addChild(new Poker(this.game, i * (66 + 16), y))
     }
 
     if (result) {
