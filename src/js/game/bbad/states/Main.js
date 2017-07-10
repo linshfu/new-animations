@@ -25,6 +25,21 @@ export default class Main extends Phaser.State {
 
     this.cardGroupGuest = new CardGroup(this.game, 438, 86)
     this.game.add.existing(this.cardGroupGuest)
+
+    this.showMoney()
+  }
+
+  showMoney() {
+    this.money = this.game.add.sprite(151, 6, 'money')
+    const shining = this.money.animations.add('shine')
+    shining.play(8, true)
+    this.game.time.events.loop(750, () => {
+      if (this.money.left === 151) {
+        this.money.left = 508
+      } else {
+        this.money.left = 151
+      }
+    })
   }
 
   update() {
@@ -39,7 +54,11 @@ export default class Main extends Phaser.State {
     if (this.isDrawing) return
 
     this.game.result = res
-    this.ball.alpha = 0
+    this.ball.visible = false
+    this.money.visible = false
+
+    this.game.distrFirstHost.visible = false
+    this.game.distrFirstGuest.visible = false
 
     this.cardGroupHost.drawingFirst(res.home)
     this.cardGroupGuest.drawingFirst(res.away).then(() => {

@@ -8,30 +8,22 @@ export default class Scoreboard extends Phaser.Group {
     this.left = x
     this.top = y
 
-    const textStyle = {
-      font: 'bold 40pt Arial',
-      fill: 'white',
-      align: 'center'
-    }
-
     const bg = new Phaser.Sprite(this.game, 0, 0, 'scoreboard')
+    const vs = new Phaser.Sprite(this.game, 113, 58, 'icon_vs')
 
-    this.hostScore = new Phaser.Text(this.game, 65, 68, 0, textStyle)
-    this.guestScore = new Phaser.Text(this.game, 180, 68, 0, textStyle)
+    this.hostScore = new Phaser.Sprite(this.game, 32, 32, 'Scoreboard_fraction_0')
+    this.guestScore = new Phaser.Sprite(this.game, 147, 32, 'Scoreboard_fraction_0')
 
-    this.hostScore.anchor.set(0.5)
-    this.guestScore.anchor.set(0.5)
-
-    this.addMultiple([bg, this.hostScore, this.guestScore])
+    this.addMultiple([bg, vs, this.hostScore, this.guestScore])
   }
 
   setHostScore(s) {
     if (!s.includes('is-goalIn')) return
-    this.hostScore.setText(1)
+    this.hostScore.loadTexture('Scoreboard_fraction_1')
   }
 
   setGuestScore(s) {
     if (!s.includes('is-goalIn')) return
-    this.guestScore.setText(1)
+    this.guestScore.loadTexture('Scoreboard_fraction_1')
   }
 }

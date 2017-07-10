@@ -35,6 +35,7 @@ export default class Preload extends Phaser.State {
 
     // 牌
     this.game.load.image('poker_back', 'poker/poker_back.png')
+    this.game.load.image('poker_shadow', 'poker_shadow.png')
     const suits = ['spades', 'diamonds', 'clubs', 'hearts']
     suits.forEach((s) => {
       for (let i=1; i<=13; i++) {
@@ -51,6 +52,9 @@ export default class Preload extends Phaser.State {
     })
 
     this.game.load.image('scoreboard', 'scoreboard.png')
+    this.game.load.image('icon_vs', 'icon_vs.png')
+    this.game.load.image('Scoreboard_fraction_0', 'Scoreboard_fraction_0.png')
+    this.game.load.image('Scoreboard_fraction_1', 'Scoreboard_fraction_1.png')
 
     this.game.load.image('CoinFlip_hand_1', 'CoinFlip/CoinFlip_hand_1.png')
     this.game.load.image('CoinFlip_hand_2', 'CoinFlip/CoinFlip_hand_2.png')
@@ -62,6 +66,8 @@ export default class Preload extends Phaser.State {
     this.game.load.image('CoinFlip_home_shadow', 'CoinFlip/CoinFlip_home_shadow.png')
 
     this.game.load.atlasJSONHash('coin', 'CoinFlip/coin.png', 'CoinFlip/coin.json')
+
+    this.game.load.atlasJSONHash('money', 'money.png', 'money.json')
   }
 
   loadStart() {

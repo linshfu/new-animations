@@ -5,7 +5,6 @@ import CardGroup from '../objs/CardGroup'
 import Scoreboard from '../objs/Scoreboard'
 import CoinFlip from '../objs/CoinFlip'
 import DistrRounding from '../objs/DistrRounding'
-import Soccer from '../objs/Soccer'
 
 export default class RoundingTime extends Phaser.State {
   create() {
@@ -26,10 +25,6 @@ export default class RoundingTime extends Phaser.State {
     this.coinFlip = new CoinFlip(this.game, 319, 150)
     this.game.add.existing(this.coinFlip)
 
-    // ball
-    this.ball = new Soccer(this.game, this.game.world.centerX, 95)
-    this.game.add.existing(this.ball)
-
     // DistrRounding
     this.distr = new DistrRounding(this.game, 250, 227, {
       home: 33, draw: 33, away: 33
@@ -37,6 +32,21 @@ export default class RoundingTime extends Phaser.State {
     this.game.add.existing(this.distr)
 
     this.resultImg = this.game.add.sprite(0, this.game.height, null)
+
+    this.showMoney()
+  }
+
+  showMoney() {
+    this.money = this.game.add.sprite(151, 6, 'money')
+    const shining = this.money.animations.add('shine')
+    shining.play(8, true)
+    this.game.time.events.loop(750, () => {
+      if (this.money.left === 151) {
+        this.money.left = 508
+      } else {
+        this.money.left = 151
+      }
+    })
   }
 
   showScoreboard(res) {
@@ -76,6 +86,10 @@ export default class RoundingTime extends Phaser.State {
     if (this.isDrawing) return
 
     const firstkick = get(res, 'firstkick')
+
+    this.money.visible = false
+
+    this.distr.visible = false
 
     await this.coinFlip.flip(firstkick)
 

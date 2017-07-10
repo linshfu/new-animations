@@ -13,10 +13,13 @@ export default class Poker extends Phaser.Group {
     this.back = new Phaser.Sprite(this.game, 0, 0, 'poker_back')
     this.back.anchor.set(0.5)
 
+    this.shadow = new Phaser.Sprite(this.game, 0, (this.back.height / 2) - 2, 'poker_shadow')
+    this.shadow.anchor.set(0.5, 0)
+
     this.pivot.x = -this.back.width / 2
     this.pivot.y = -this.back.height / 2
 
-    this.addMultiple([this.back])
+    this.addMultiple([this.shadow, this.back])
   }
 
   suit([suit, num]) {
@@ -30,6 +33,10 @@ export default class Poker extends Phaser.Group {
       animFront.to({
         x: this.back.scale.x * 0
       }, 250, Phaser.Easing.Cubic.In)
+
+      animFront.onUpdateCallback((a, b) => {
+        this.shadow.scale.x = (1 - b)
+      })
 
       animFront.onComplete.addOnce(() => {
         resolve()
@@ -49,6 +56,10 @@ export default class Poker extends Phaser.Group {
 
       const animBack = this.game.add.tween(this.back.scale)
       animBack.to({ x: 1 }, 250, Phaser.Easing.Cubic.Out)
+
+      animBack.onUpdateCallback((a, b) => {
+        this.shadow.scale.x = b
+      })
       animBack.onComplete.addOnce(() => {
         this.back.key === 'poker_back' ? this.isFront = false : this.isFront = true
         setTimeout(() => {

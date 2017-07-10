@@ -40,13 +40,13 @@ export default class Soccer extends Phaser.Group {
   }
 
   start() {
-    this.ball.behaviors.set('bouncing', this.behaviorBall())
+    this.ball.behaviors.set('bouncing', this.behaviorBall(), { data: this.data })
   }
 
   behaviorBall() {
     return {
       destroy: (el) => {
-        el.y = 150
+        el.y = 33
       },
 
       update: (el, opts) => {
