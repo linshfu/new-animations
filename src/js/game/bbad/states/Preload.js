@@ -14,6 +14,8 @@ export default class Preload extends Phaser.State {
 
     this.game.load.image('game_bg', 'game_bg.png')
     this.game.load.image('soccer_ball', 'soccer.png')
+    this.game.load.image('soccer_pedestal', 'soccer_pedestal.png')
+    this.game.load.image('soccer_shadow', 'soccer_shadow.png')
 
     // 倒數
     this.game.load.image('countdown_hand', 'stopwatch/countdown_hand_1.png')
@@ -26,6 +28,10 @@ export default class Preload extends Phaser.State {
     this.game.load.image('icon_purchase_agoalposthit', 'icon_purchase_agoalposthit.png')
     this.game.load.image('icon_purchase_goal', 'icon_purchase_goal.png')
     this.game.load.image('icon_purchase_miss', 'icon_purchase_miss.png')
+
+    this.game.load.image('icon_purchase_home', 'icon_purchase_home.png')
+    this.game.load.image('icon_purchase_draw', 'icon_purchase_draw.png')
+    this.game.load.image('icon_purchase_away', 'icon_purchase_away.png')
 
     // 牌
     this.game.load.image('poker_back', 'poker/poker_back.png')

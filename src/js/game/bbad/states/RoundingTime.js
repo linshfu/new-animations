@@ -4,6 +4,8 @@ import { get } from 'lodash'
 import CardGroup from '../objs/CardGroup'
 import Scoreboard from '../objs/Scoreboard'
 import CoinFlip from '../objs/CoinFlip'
+import DistrRounding from '../objs/DistrRounding'
+import Soccer from '../objs/Soccer'
 
 export default class RoundingTime extends Phaser.State {
   create() {
@@ -23,6 +25,16 @@ export default class RoundingTime extends Phaser.State {
     // CoinFlip
     this.coinFlip = new CoinFlip(this.game, 319, 150)
     this.game.add.existing(this.coinFlip)
+
+    // ball
+    this.ball = new Soccer(this.game, this.game.world.centerX, 95)
+    this.game.add.existing(this.ball)
+
+    // DistrRounding
+    this.distr = new DistrRounding(this.game, 250, 227, {
+      home: 33, draw: 33, away: 33
+    })
+    this.game.add.existing(this.distr)
 
     this.resultImg = this.game.add.sprite(0, this.game.height, null)
   }
@@ -63,9 +75,18 @@ export default class RoundingTime extends Phaser.State {
   async drawing(res) {
     if (this.isDrawing) return
 
-    await this.coinFlip.flip(get(res, 'firstkick'))
-    await this.cardGroupHost.drawingSecond(res.home)
-    await this.cardGroupGuest.drawingSecond(res.away)
+    const firstkick = get(res, 'firstkick')
+
+    await this.coinFlip.flip(firstkick)
+
+    if (firstkick === 'away') {
+      await this.cardGroupGuest.drawingSecond(res.away)
+      await this.cardGroupHost.drawingSecond(res.home)
+    } else {
+      await this.cardGroupHost.drawingSecond(res.home)
+      await this.cardGroupGuest.drawingSecond(res.away)
+    }
+
     await this.showScoreboard(res)
     this.hideScoreboard()
     await this.showResult(get(res, 'winresult'))

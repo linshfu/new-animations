@@ -16,7 +16,7 @@ export default class Main extends Phaser.State {
     this.game.add.existing(this.game.distrFirstGuest)
 
     // ball
-    this.ball = new Soccer(this.game, this.game.world.centerX, 100)
+    this.ball = new Soccer(this.game, this.game.world.centerX, 95)
     this.game.add.existing(this.ball)
 
     // CardGroup
