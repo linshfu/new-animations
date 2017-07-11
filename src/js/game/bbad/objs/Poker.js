@@ -13,7 +13,7 @@ export default class Poker extends Phaser.Group {
     this.back = new Phaser.Sprite(this.game, 0, 0, 'poker_back')
     this.back.anchor.set(0.5)
 
-    this.shadow = new Phaser.Sprite(this.game, 0, (this.back.height / 2) - 2, 'poker_shadow')
+    this.shadow = new Phaser.Sprite(this.game, 0, (this.back.height / 2) - 10, 'poker_shadow')
     this.shadow.anchor.set(0.5, 0)
 
     this.pivot.x = -this.back.width / 2

@@ -60,10 +60,8 @@ export default class Preload extends Phaser.State {
     this.game.load.image('CoinFlip_hand_2', 'CoinFlip/CoinFlip_hand_2.png')
 
     this.game.load.image('CoinFlip_away', 'CoinFlip/CoinFlip_away.png')
-    this.game.load.image('CoinFlip_away_shadow', 'CoinFlip/CoinFlip_away_shadow.png')
-
     this.game.load.image('CoinFlip_home', 'CoinFlip/CoinFlip_home.png')
-    this.game.load.image('CoinFlip_home_shadow', 'CoinFlip/CoinFlip_home_shadow.png')
+    this.game.load.image('CoinFlip_shadow', 'CoinFlip/CoinFlip_shadow.png')
 
     this.game.load.atlasJSONHash('coin', 'CoinFlip/coin.png', 'CoinFlip/coin.json')
 
