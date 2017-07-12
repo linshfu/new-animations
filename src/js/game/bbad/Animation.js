@@ -20,7 +20,7 @@ const defaults = {
 }
 
 export default class Animation extends Phaser.Game {
-  constructor(width, height, parent, options) {
+  constructor(width, height, parent, options = {}) {
     super(width, height, Phaser.AUTO, parent, null, false)
 
     if (options instanceof Object) {

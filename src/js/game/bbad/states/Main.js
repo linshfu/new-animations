@@ -9,10 +9,10 @@ export default class Main extends Phaser.State {
     this.isDrawing = false
 
     // distr
-    this.game.distrFirstHost = new Distr(this.game, 12, 225, 0xb83636, this.game.opt.distr.home)
+    this.game.distrFirstHost = new Distr(this.game, 12, 225, 0xb83636)
     this.game.add.existing(this.game.distrFirstHost)
 
-    this.game.distrFirstGuest = new Distr(this.game, 514, 225, 0x4d79ca, this.game.opt.distr.away)
+    this.game.distrFirstGuest = new Distr(this.game, 514, 225, 0x4d79ca)
     this.game.add.existing(this.game.distrFirstGuest)
 
     // ball
@@ -45,8 +45,10 @@ export default class Main extends Phaser.State {
   update() {
     if (this.game.cd.isCountingdown) {
       this.ball.stop()
+      this.money.alpha = 0
     } else {
       this.ball.start()
+      this.money.alpha = 1
     }
   }
 

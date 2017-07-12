@@ -18,9 +18,9 @@ export default class Distr extends Phaser.Group {
     this.hitGroup = new Phaser.Group(this.game, null, 'resultIcon_hit')
     this.missGroup = new Phaser.Group(this.game, null, 'resultIcon_miss')
 
-    this.bars.percentGoal = new ProgressBar(this.game, 2, 59, this.data['goal'], this.fill)
-    this.bars.percentHit = new ProgressBar(this.game, 2, 59, this.data['hit'], this.fill)
-    this.bars.percentMiss = new ProgressBar(this.game, 2, 59, this.data['miss'], this.fill)
+    this.bars.percentGoal = new ProgressBar(this.game, 2, 59, 33.33, this.fill)
+    this.bars.percentHit = new ProgressBar(this.game, 2, 59, 33.33, this.fill)
+    this.bars.percentMiss = new ProgressBar(this.game, 2, 59, 33.33, this.fill)
 
     this.goalGroup.addMultiple([new Phaser.Sprite(this.game, 0, 0, 'icon_purchase_goal'), this.bars.percentGoal])
     this.hitGroup.addMultiple([new Phaser.Sprite(this.game, 0, 0, 'icon_purchase_agoalposthit'), this.bars.percentHit])

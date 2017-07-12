@@ -15,21 +15,45 @@ export default class Index extends GameIndex {
   }
 
   componentDidMount() {
-    this.animation = new Animation(750, 326, this.animationDOM, {
-      distr: {
-        home: {
-          goal: 80,
-          hit: 20,
-          miss: 0
-        },
-        away: {
-          goal: 10,
-          hit: 60,
-          miss: 30
-        }
+    this.animation = new Animation(750, 326, this.animationDOM)
+    this.animation.start()
+  }
+
+  animDrawingFirst() {
+    this.animation.drawingFirst({
+      home: {
+        goalpostleft: ['diamonds', 10],
+        goalpostright: ['hearts', 3]
+      },
+      away: {
+        goalpostleft: ['clubs', 5],
+        goalpostright: ['diamonds', 1]
       }
     })
-    this.animation.start()
+    setTimeout(() => {
+      this.animation.countdown(5).then(() => {
+        this.animDrawingSecond()
+      })
+    }, 40000)
+  }
+
+  animDrawingSecond() {
+    this.animation.drawingSecond({
+      home: {
+        ball: ['clubs', 5],
+        goalpostleft: ['diamonds', 10],
+        goalpostright: ['hearts', 3],
+        shootresult: 'is-goalIn'
+      },
+      away: {
+        ball: ['spades', 6],
+        goalpostleft: ['clubs', 5],
+        goalpostright: ['diamonds', 1],
+        shootresult: 'is-goalIn'
+      },
+      winresult: 'draw',
+      firstkick: 'home'
+    })
   }
 
   handleStartBtn() {
@@ -65,35 +89,11 @@ export default class Index extends GameIndex {
   }
 
   handleDrawingFirstBtn() {
-    this.animation.drawingFirst({
-      home: {
-        goalpostleft: ['diamonds', 10],
-        goalpostright: ['hearts', 3]
-      },
-      away: {
-        goalpostleft: ['clubs', 5],
-        goalpostright: ['diamonds', 1]
-      }
-    })
+    this.animDrawingFirst()
   }
 
   handleDrawingSecondBtn() {
-    this.animation.drawingSecond({
-      home: {
-        ball: ['clubs', 5],
-        goalpostleft: ['diamonds', 10],
-        goalpostright: ['hearts', 3],
-        shootresult: 'is-goalIn'
-      },
-      away: {
-        ball: ['spades', 6],
-        goalpostleft: ['clubs', 5],
-        goalpostright: ['diamonds', 1],
-        shootresult: 'is-goalIn'
-      },
-      winresult: 'draw',
-      firstkick: 'home'
-    })
+    this.animDrawingSecond()
   }
 
   handleCountdownBtn() {
@@ -103,7 +103,7 @@ export default class Index extends GameIndex {
       return Math.floor(Math.random() * (max - min)) + min //The maximum is exclusive and the minimum is inclusive
     }
     this.animation.countdown(5).then(() => {
-      // end
+      this.animDrawingFirst()
     })
   }
 
