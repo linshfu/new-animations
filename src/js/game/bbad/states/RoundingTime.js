@@ -44,16 +44,25 @@ export default class RoundingTime extends Phaser.State {
     }
   }
 
-  showMoney() {
+  showMoneyPart() {
     this.money = this.game.add.sprite(151, 6, 'money')
     const shining = this.money.animations.add('shine')
-    shining.play(8, true)
-    this.game.time.events.loop(750, () => {
-      if (this.money.left === 151) {
-        this.money.left = 508
-      } else {
-        this.money.left = 151
-      }
+    shining.play(4, true)
+
+    this.game.time.events.add(1500, () => {
+      this.money.left = 508
+    })
+
+    this.game.time.events.add(3000, () => {
+      this.money.visible = false
+    })
+  }
+
+  showMoney() {
+    this.showMoneyPart()
+
+    this.game.time.events.loop(4000, () => {
+      this.showMoneyPart()
     })
   }
 
@@ -66,7 +75,7 @@ export default class RoundingTime extends Phaser.State {
       tween.onComplete.add(() => {
         setTimeout(() => {
           resolve()
-        }, 1000)
+        }, 1500)
       })
       tween.start()
     })
@@ -84,7 +93,7 @@ export default class RoundingTime extends Phaser.State {
       tween.onComplete.add(() => {
         setTimeout(() => {
           resolve()
-        }, 500)
+        }, 2000)
       })
       tween.start()
     })

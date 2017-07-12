@@ -32,21 +32,21 @@ export default class Main extends Phaser.State {
   showMoneyPart() {
     this.money = this.game.add.sprite(151, 6, 'money')
     const shining = this.money.animations.add('shine')
-    shining.onComplete.add(() => {
-      if (this.money.left === 151) {
-        this.money.left = 508
-        shining.play(4, false)
-      } else {
-        this.money.visible = false
-      }
+    shining.play(4, true)
+
+    this.game.time.events.add(1500, () => {
+      this.money.left = 508
     })
-    shining.play(4, false)
+
+    this.game.time.events.add(3000, () => {
+      this.money.visible = false
+    })
   }
 
   showMoney() {
     this.showMoneyPart()
 
-    this.game.time.events.loop(3000, () => {
+    this.game.time.events.loop(4000, () => {
       this.showMoneyPart()
     })
   }
