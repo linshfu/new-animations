@@ -18,7 +18,7 @@ export default class DistrRounding extends Phaser.Group {
     this.awayGroup = new Phaser.Group(this.game, null)
 
     this.bars.home = new ProgressBar(this.game, 5, 57, this.data['home'], 0xb83636)
-    this.bars.draw = new ProgressBar(this.game, 5, 57, this.data['draw'], 0x008337)
+    this.bars.draw = new ProgressBar(this.game, 5, 57, this.data['draw'], 0x007D35)
     this.bars.away = new ProgressBar(this.game, 5, 57, this.data['away'], 0x2a84d2)
 
     this.homeGroup.addMultiple([new Phaser.Sprite(this.game, 0, 0, 'icon_purchase_home'), this.bars.home])
