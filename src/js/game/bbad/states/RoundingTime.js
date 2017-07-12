@@ -36,6 +36,14 @@ export default class RoundingTime extends Phaser.State {
     this.showMoney()
   }
 
+  update() {
+    if (this.game.cd.isCountingdown) {
+      this.money.alpha = 0
+    } else {
+      this.money.alpha = 1
+    }
+  }
+
   showMoney() {
     this.money = this.game.add.sprite(151, 6, 'money')
     const shining = this.money.animations.add('shine')

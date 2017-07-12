@@ -7,10 +7,6 @@ export default class Countdown extends Phaser.Group {
     this.game = game
     this.isCountingdown = false
 
-    const mask = new Phaser.Graphics(this.game, 0, 0)
-    mask.beginFill(0x333333, 0.5)
-    mask.drawRect(0, 0, this.game.width, this.game.height)
-
     const handLayer = new Phaser.Group(this.game)
     handLayer.left = x
     handLayer.top = y
@@ -19,7 +15,7 @@ export default class Countdown extends Phaser.Group {
     this.numImg = new Phaser.Sprite(this.game, 93, 107, 'countdown_num_5')
     handLayer.addMultiple([this.bg, this.numImg])
 
-    this.addMultiple([mask, handLayer])
+    this.addMultiple([handLayer])
 
     this.hide()
   }
@@ -38,7 +34,7 @@ export default class Countdown extends Phaser.Group {
     }, 250)
     setTimeout(() => {
       this.bg.loadTexture('countdown_hand')
-    }, 750)
+    }, 500)
   }
 
   timingStarts(n = 5) {
@@ -58,8 +54,10 @@ export default class Countdown extends Phaser.Group {
       this.timer.repeat(Phaser.Timer.SECOND, this.num, this.updateCounter, this)
       this.timer.onComplete.add(() => {
         this.hide()
-        this.isCountingdown = false
-        resolve()
+        setTimeout(() => {
+          this.isCountingdown = false
+          resolve()
+        }, 500)
       })
       this.timer.start()
       this.isCountingdown = true
