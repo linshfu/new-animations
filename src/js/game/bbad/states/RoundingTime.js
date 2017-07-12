@@ -66,7 +66,7 @@ export default class RoundingTime extends Phaser.State {
       tween.onComplete.add(() => {
         setTimeout(() => {
           resolve()
-        }, 500)
+        }, 1000)
       })
       tween.start()
     })
