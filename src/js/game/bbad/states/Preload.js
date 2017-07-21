@@ -66,6 +66,8 @@ export default class Preload extends Phaser.State {
     this.game.load.atlasJSONHash('coin', 'CoinFlip/coin.png', 'CoinFlip/coin.json')
 
     this.game.load.atlasJSONHash('money', 'money.png', 'money.json')
+
+    this.game.load.image('arrow_prompt', 'arrow_prompt.png')
   }
 
   loadStart() {
