@@ -40,8 +40,8 @@ export default class Animation extends Phaser.Game {
     this.state.start('Boot')
   }
 
-  start() {
-    this.events.emit('GAME_STATE_START')
+  start(opt) {
+    this.events.emit('GAME_STATE_START', opt)
   }
 
   roundingTime(res) {

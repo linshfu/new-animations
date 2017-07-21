@@ -3,16 +3,29 @@
 import Distr from '../objs/Distr'
 import Soccer from '../objs/Soccer'
 import CardGroup from '../objs/CardGroup'
+import { get } from 'lodash'
 
 export default class Main extends Phaser.State {
+  init(opt) {
+    this.opt = opt
+  }
+
   create() {
     this.isDrawing = false
 
     // distr
-    this.game.distrFirstHost = new Distr(this.game, 12, 225, 0xb83636, this.game.opt.distr.home)
+    this.game.distrFirstHost = new Distr(this.game, 12, 225, 0xb83636, {
+      goal: get(this.opt, 'distribution.goal_home'),
+      hit: get(this.opt, 'distribution.hit_home'),
+      miss: get(this.opt, 'distribution.out_home')
+    })
     this.game.add.existing(this.game.distrFirstHost)
 
-    this.game.distrFirstGuest = new Distr(this.game, 514, 225, 0x4d79ca, this.game.opt.distr.away)
+    this.game.distrFirstGuest = new Distr(this.game, 514, 225, 0x4d79ca, {
+      goal: get(this.opt, 'distribution.goal_away'),
+      hit: get(this.opt, 'distribution.hit_away'),
+      miss: get(this.opt, 'distribution.out_away')
+    })
     this.game.add.existing(this.game.distrFirstGuest)
 
     // ball

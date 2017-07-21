@@ -4,7 +4,7 @@ import * as Behavior from 'phaser-behavior-plugin'
 
 export default class Boot extends Phaser.State {
   preload() {
-    this.game.load.image('bbinlogo', '/img/game/loadingbg.png')
+    this.game.load.image('bbinlogo', 'img/game/loadingbg.png')
   }
 
   create() {

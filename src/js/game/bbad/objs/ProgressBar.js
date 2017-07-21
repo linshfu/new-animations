@@ -4,7 +4,7 @@ import ProgressBg from './ProgressBg'
 import CylinderMask from './CylinderMask'
 
 export default class ProgressBar extends Phaser.Sprite {
-  constructor(game, x, y, percent, fill = 0xb83636) {
+  constructor(game, x, y, percent = 33, fill = 0xb83636) {
     super(game, x, y, null)
 
     this.progressWidth = 65
@@ -23,7 +23,7 @@ export default class ProgressBar extends Phaser.Sprite {
       width: this.progressWidth * (this.percent / 100)
     }, 500, null, true)
 
-    this.num = new Phaser.Text(this.game, 0, 0, `${this.percent.toFixed(2)}%`, {
+    this.num = new Phaser.Text(this.game, 0, 0, `${this.percent}%`, {
       font: 'Normal 12px "Microsoft JhengHei", Arial',
       fill: '#ecebe3',
       align: 'center'
@@ -47,6 +47,6 @@ export default class ProgressBar extends Phaser.Sprite {
     this.game.add.tween(this.bar).to({
       width: this.progressWidth * (data / 100)
     }, 500, null, true)
-    this.num.setText(`${data.toFixed(2)}%`)
+    this.num.setText(`${data}%`)
   }
 }

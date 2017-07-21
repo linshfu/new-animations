@@ -87,7 +87,12 @@ export default class RoundingTime extends Phaser.State {
 
   showResult(res) {
     return new Promise((resolve) => {
-      this.resultImg.loadTexture(`${get(this.game, 'opt.lang')}_result_${res}`)
+      const mapping = {
+        tie: 'draw',
+        home: 'home',
+        away: 'away'
+      }
+      this.resultImg.loadTexture(`${get(this.game, 'opt.lang')}_result_${mapping[res]}`)
 
       const tween = this.game.add.tween(this.resultImg).to({ y: this.game.height - this.resultImg.height }, 250, Phaser.Easing.Exponential.Out)
       tween.onComplete.add(() => {

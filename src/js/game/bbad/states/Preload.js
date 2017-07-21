@@ -10,7 +10,7 @@ export default class Preload extends Phaser.State {
   }
 
   preload() {
-    this.game.load.path = '/img/game/bbad/'
+    this.game.load.path = 'img/game/bbad/'
 
     this.game.load.image('game_bg', 'game_bg.png')
     this.game.load.image('soccer_ball', 'soccer.png')

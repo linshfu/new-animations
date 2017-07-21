@@ -39,11 +39,11 @@ export default class Events extends EventEmitter {
     }
   }
 
-  startAnim() {
+  startAnim(opt) {
     if (this.state.isLoadComplete) {
-      this.game.state.start('Main')
+      this.game.state.start('Main', true, false, opt)
     } else {
-      setTimeout(() => this.emit(GAME_STATE_START), 100)
+      setTimeout(() => this.emit(GAME_STATE_START, opt), 100)
     }
   }
 
