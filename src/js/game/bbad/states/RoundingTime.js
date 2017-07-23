@@ -8,6 +8,7 @@ import DistrRounding from '../objs/DistrRounding'
 
 export default class RoundingTime extends Phaser.State {
   create() {
+    this.game.cd.hide()
     this.isDrawing = false
 
     // CardGroup
@@ -93,7 +94,6 @@ export default class RoundingTime extends Phaser.State {
     await this.showScoreboard(res)
     this.hideScoreboard()
     await this.showResult(get(res, 'winresult'))
-    this.game.state.start('Main')
 
     this.isDrawing = true
   }

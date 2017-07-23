@@ -11,6 +11,7 @@ export default class Main extends Phaser.State {
   }
 
   create() {
+    this.game.cd.hide()
     this.isDrawing = false
 
     // distr
