@@ -32,38 +32,6 @@ export default class RoundingTime extends Phaser.State {
     this.game.add.existing(this.distr)
 
     this.resultImg = this.game.add.sprite(0, this.game.height, null)
-
-    this.showMoney()
-  }
-
-  update() {
-    if (this.game.cd.isCountingdown) {
-      this.money.alpha = 0
-    } else {
-      this.money.alpha = 1
-    }
-  }
-
-  showMoneyPart() {
-    this.money = this.game.add.sprite(151, 6, 'money')
-    const shining = this.money.animations.add('shine')
-    shining.play(4, true)
-
-    this.game.time.events.add(1500, () => {
-      this.money.left = 508
-    })
-
-    this.game.time.events.add(3000, () => {
-      this.money.visible = false
-    })
-  }
-
-  showMoney() {
-    this.showMoneyPart()
-
-    this.game.time.events.loop(4000, () => {
-      this.showMoneyPart()
-    })
   }
 
   showScoreboard(res) {
@@ -108,8 +76,6 @@ export default class RoundingTime extends Phaser.State {
     if (this.isDrawing) return
 
     const firstkick = get(res, 'firstkick')
-
-    this.money.visible = false
 
     this.distr.visible = false
 

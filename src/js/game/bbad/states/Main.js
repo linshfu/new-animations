@@ -38,30 +38,6 @@ export default class Main extends Phaser.State {
 
     this.cardGroupGuest = new CardGroup(this.game, 438, 86)
     this.game.add.existing(this.cardGroupGuest)
-
-    this.showMoney()
-  }
-
-  showMoneyPart() {
-    this.money = this.game.add.sprite(151, 6, 'money')
-    const shining = this.money.animations.add('shine')
-    shining.play(4, true)
-
-    this.game.time.events.add(1500, () => {
-      this.money.left = 508
-    })
-
-    this.game.time.events.add(3000, () => {
-      this.money.visible = false
-    })
-  }
-
-  showMoney() {
-    this.showMoneyPart()
-
-    this.game.time.events.loop(4000, () => {
-      this.showMoneyPart()
-    })
   }
 
   update() {
@@ -77,7 +53,6 @@ export default class Main extends Phaser.State {
 
     this.game.result = res
     this.ball.visible = false
-    this.money.visible = false
 
     this.game.distrFirstHost.visible = false
     this.game.distrFirstGuest.visible = false
