@@ -62,6 +62,8 @@ export default class Animation extends Phaser.Game {
   }
 
   countdown(sec) {
+    if (this.state.current === 'Main') this.mainState.stopDecor()
+    if (this.state.current === 'RoundingTime') this.roundingState.stopDecor()
     this.cd.timingStarts(sec)
   }
 }

@@ -3,6 +3,7 @@
 import Distr from '../objs/Distr'
 import Soccer from '../objs/Soccer'
 import CardGroup from '../objs/CardGroup'
+import BettingTips from '../objs/BettingTips'
 import { get } from 'lodash'
 
 export default class Main extends Phaser.State {
@@ -39,14 +40,14 @@ export default class Main extends Phaser.State {
 
     this.cardGroupGuest = new CardGroup(this.game, 438, 86)
     this.game.add.existing(this.cardGroupGuest)
+
+    // arraw
+    this.arraw = new BettingTips(this.game)
   }
 
-  update() {
-    if (this.game.cd.isCountingdown) {
-      this.ball.stop()
-    } else {
-      this.ball.start()
-    }
+  stopDecor() {
+    this.ball.stop()
+    this.arraw.stop()
   }
 
   drawing(res) {
@@ -55,6 +56,7 @@ export default class Main extends Phaser.State {
     this.game.cd.hide()
     this.game.result = res
     this.ball.visible = false
+    this.arraw.stop()
 
     this.game.distrFirstHost.visible = false
     this.game.distrFirstGuest.visible = false

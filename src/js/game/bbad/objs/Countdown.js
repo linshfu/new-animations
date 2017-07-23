@@ -5,7 +5,6 @@ export default class Countdown extends Phaser.Group {
     super(game)
 
     this.game = game
-    this.isCountingdown = false
 
     const handLayer = new Phaser.Group(this.game)
     handLayer.left = x

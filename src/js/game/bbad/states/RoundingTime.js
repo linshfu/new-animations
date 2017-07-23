@@ -5,6 +5,7 @@ import CardGroup from '../objs/CardGroup'
 import Scoreboard from '../objs/Scoreboard'
 import CoinFlip from '../objs/CoinFlip'
 import DistrRounding from '../objs/DistrRounding'
+import BettingTips from '../objs/BettingTips'
 
 export default class RoundingTime extends Phaser.State {
   create() {
@@ -32,7 +33,14 @@ export default class RoundingTime extends Phaser.State {
     })
     this.game.add.existing(this.distr)
 
+    // arraw
+    this.arraw = new BettingTips(this.game)
+
     this.resultImg = this.game.add.sprite(0, this.game.height, null)
+  }
+
+  stopDecor() {
+    this.arraw.stop()
   }
 
   showScoreboard(res) {
@@ -80,6 +88,7 @@ export default class RoundingTime extends Phaser.State {
 
     this.distr.visible = false
     this.game.cd.hide()
+    this.arraw.stop()
 
     await this.coinFlip.flip(firstkick)
 
