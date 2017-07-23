@@ -62,6 +62,6 @@ export default class Animation extends Phaser.Game {
   }
 
   countdown(sec) {
-    return this.cd.timingStarts(sec)
+    this.cd.timingStarts(sec)
   }
 }

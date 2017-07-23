@@ -78,6 +78,7 @@ export default class RoundingTime extends Phaser.State {
     const firstkick = get(res, 'firstkick')
 
     this.distr.visible = false
+    this.game.cd.hide()
 
     await this.coinFlip.flip(firstkick)
 

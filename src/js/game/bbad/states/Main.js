@@ -51,6 +51,7 @@ export default class Main extends Phaser.State {
   drawing(res) {
     if (this.isDrawing) return
 
+    this.game.cd.hide()
     this.game.result = res
     this.ball.visible = false
 

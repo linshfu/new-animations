@@ -37,36 +37,20 @@ export default class Countdown extends Phaser.Group {
     }, 500)
   }
 
-  timingStarts(n = 5) {
+  delay(ms) {
     return new Promise((resolve) => {
-      if (this.isCountingdown) return
-
-      this.show()
-
-      this.press()
-
-      this.num = parseInt(n, 10)
-
-      this.numImg.loadTexture(`countdown_num_${this.num}`)
-
-      this.timer = new Phaser.Timer(this.game)
-      this.game.time.add(this.timer)
-      this.timer.repeat(Phaser.Timer.SECOND, this.num, this.updateCounter, this)
-      this.timer.onComplete.add(() => {
-        this.hide()
-        setTimeout(() => {
-          this.isCountingdown = false
-          resolve()
-        }, 500)
-      })
-      this.timer.start()
-      this.isCountingdown = true
+      setTimeout(resolve, ms)
     })
   }
 
-  updateCounter() {
-    if (!(this.num - 1)) return
-    this.numImg.loadTexture(`countdown_num_${this.num - 1}`)
-    this.num --
+  async timingStarts(n = 5) {
+    if (n === 5) {
+      this.press()
+    }
+    this.show()
+    this.num = parseInt(n, 10)
+    this.numImg.loadTexture(`countdown_num_${this.num}`)
+
+    await this.delay(1000)
   }
 }
