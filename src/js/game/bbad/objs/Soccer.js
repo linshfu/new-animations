@@ -9,6 +9,8 @@ export default class Soccer extends Phaser.Group {
     this.top = y
     this.index = 0
 
+    this.isBouncing = true
+
     const pedestal = new Phaser.Sprite(this.game, 0, 85, 'soccer_pedestal')
     pedestal.anchor.set(0.5, 0)
 
@@ -29,34 +31,25 @@ export default class Soccer extends Phaser.Group {
 
     this.data = data1.concat(data2)
 
-    this.game.behaviorPlugin.enable(this.ball)
-    this.ball.behaviors.set('bouncing', this.behaviorBall(), { data: this.data })
-
     this.addMultiple([pedestal, this.shadow, this.ball])
   }
 
   stop() {
-    this.ball.behaviors.remove('bouncing')
+    this.isBouncing = false
   }
 
   start() {
-    this.ball.behaviors.set('bouncing', this.behaviorBall(), { data: this.data })
+    this.isBouncing = true
   }
 
-  behaviorBall() {
-    return {
-      destroy: (el) => {
-        el.y = 33
-      },
+  update() {
+    if (this.isBouncing) {
+      this.ball.y = this.data[this.index].y
+      this.shadow.scale.x = this.data[this.index].scale
+      this.index++
 
-      update: (el, opts) => {
-        el.y = opts.data[this.index].y
-        this.shadow.scale.x = opts.data[this.index].scale
-        this.index++
-
-        if (this.index === opts.data.length) {
-          this.index = 0
-        }
+      if (this.index === this.data.length) {
+        this.index = 0
       }
     }
   }
