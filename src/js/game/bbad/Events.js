@@ -5,6 +5,7 @@ const GAME_STATE_START = 'GAME_STATE_START'
 const GAME_STATE_ROUNDING = 'GAME_STATE_ROUNDING'
 const GAME_STATE_DRAWINGFIRST = 'GAME_STATE_DRAWINGFIRST'
 const GAME_STATE_DRAWINGSECOND = 'GAME_STATE_DRAWINGSECOND'
+const GAME_STATE_SKIP = 'GAME_STATE_SKIP'
 const GAME_UPDATE_DISTRFIRST = 'GAME_UPDATE_DISTRFIRST'
 
 export default class Events extends EventEmitter {
@@ -23,6 +24,7 @@ export default class Events extends EventEmitter {
     this.on(GAME_STATE_DRAWINGFIRST, this.drawingFirst)
     this.on(GAME_STATE_DRAWINGSECOND, this.drawingSecond)
     this.on(GAME_UPDATE_DISTRFIRST, this.updateDistrFirst)
+    this.on(GAME_STATE_SKIP, this.skip)
   }
 
   onLoadComplete() {
@@ -32,6 +34,7 @@ export default class Events extends EventEmitter {
 
   roundingTime(res) {
     if (this.state.isLoadComplete) {
+      this.game.paused = false
       this.game.result = res
       this.game.state.start('RoundingTime')
     } else {
@@ -41,6 +44,7 @@ export default class Events extends EventEmitter {
 
   startAnim(opt) {
     if (this.state.isLoadComplete) {
+      this.game.paused = false
       this.game.state.start('Main', true, false, opt)
     } else {
       setTimeout(() => this.emit(GAME_STATE_START, opt), 100)
@@ -61,5 +65,9 @@ export default class Events extends EventEmitter {
   drawingSecond(res) {
     if (this.game.state.current !== 'RoundingTime') return
     this.game.roundingState.drawing(res)
+  }
+
+  skip() {
+    this.game.paused = true
   }
 }

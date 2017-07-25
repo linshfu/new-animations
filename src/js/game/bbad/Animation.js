@@ -16,6 +16,7 @@ import RoundingTime from './states/RoundingTime'
 
 const defaults = {
   isMute: false,
+  isDrawing: false,
   lang: 'zh-cn'
 }
 
@@ -65,5 +66,9 @@ export default class Animation extends Phaser.Game {
     if (this.state.current === 'Main') this.mainState.stopDecor()
     if (this.state.current === 'RoundingTime') this.roundingState.stopDecor()
     this.cd.timingStarts(sec)
+  }
+
+  skip() {
+    this.events.emit('GAME_STATE_SKIP')
   }
 }

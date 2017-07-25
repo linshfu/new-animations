@@ -12,6 +12,7 @@ export default class Index extends GameIndex {
     this.handleDrawingFirstBtn = ::this.handleDrawingFirstBtn
     this.handleDrawingSecondBtn = ::this.handleDrawingSecondBtn
     this.handleCountdownBtn = ::this.handleCountdownBtn
+    this.handleSkipBtn = ::this.handleSkipBtn
   }
 
   componentDidMount() {
@@ -106,6 +107,10 @@ export default class Index extends GameIndex {
     this.animation.countdown(getRandomInt(1, 6))
   }
 
+  handleSkipBtn() {
+    this.animation.skip()
+  }
+
   render() {
     return (
       <div id="gameResults-wrap">
@@ -118,6 +123,7 @@ export default class Index extends GameIndex {
           <button onClick={this.handleCountdownBtn}>Countdown</button>
           <button onClick={this.handleDrawingFirstBtn}>Drawing 1</button>
           <button onClick={this.handleDrawingSecondBtn}>Drawing 2</button>
+          <button onClick={this.handleSkipBtn}>Skip</button>
         </div>
         <div ref={(r) => { this.animationDOM = r }}></div>
       </div>

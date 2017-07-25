@@ -10,7 +10,6 @@ import BettingTips from '../objs/BettingTips'
 export default class RoundingTime extends Phaser.State {
   create() {
     this.game.cd.hide()
-    this.isDrawing = false
 
     // CardGroup
     this.cardGroupHost = new CardGroup(this.game, 82, 86, this.game.result.home)
@@ -37,6 +36,10 @@ export default class RoundingTime extends Phaser.State {
     this.arraw = new BettingTips(this.game)
 
     this.resultImg = this.game.add.sprite(0, this.game.height, null)
+  }
+
+  shutdown() {
+    this.game.opt.isDrawing = false
   }
 
   stopDecor() {
@@ -82,7 +85,9 @@ export default class RoundingTime extends Phaser.State {
   }
 
   async drawing(res) {
-    if (this.isDrawing) return
+    if (this.game.opt.isDrawing) return
+
+    this.game.opt.isDrawing = true
 
     const firstkick = get(res, 'firstkick')
 
@@ -103,7 +108,5 @@ export default class RoundingTime extends Phaser.State {
     await this.showScoreboard(res)
     this.hideScoreboard()
     await this.showResult(get(res, 'winresult'))
-
-    this.isDrawing = true
   }
 }
