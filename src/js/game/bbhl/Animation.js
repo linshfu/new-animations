@@ -32,12 +32,16 @@ export default class Animation extends Phaser.Game {
     this.state.add('Boot', Boot, false)
     this.state.add('Preload', Preload, false)
     this.state.add('Ready', Ready, false)
-    this.state.add('Main', Main, false)
+    this.mainState = this.state.add('Main', Main, false)
 
     this.state.start('Boot')
   }
 
-  start() {
-    this.events.emit('GAME_STATE_START')
+  start(result) {
+    this.events.emit('GAME_STATE_START', result)
+  }
+
+  drawing(result) {
+    this.events.emit('GAME_ENABLE_CLICK', result)
   }
 }

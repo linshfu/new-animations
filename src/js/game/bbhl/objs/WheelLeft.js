@@ -1,5 +1,7 @@
 /* global Phaser */
 
+import { get } from 'lodash'
+
 export default class WheelLeft extends Phaser.Group {
   constructor(game) {
     super(game)
@@ -16,9 +18,9 @@ export default class WheelLeft extends Phaser.Group {
     this.addMultiple([this.wheel])
   }
 
-  spin(num) {
-    const spinTween = this.game.add.tween(this.wheel).to({
-      angle: 720 - (36 * num)
+  spin() {
+    this.game.add.tween(this.wheel).to({
+      angle: 720 - (36 * get(this.game, 'result.01'))
     }, 3000, Phaser.Easing.Quadratic.Out, true)
   }
 }
