@@ -54,6 +54,7 @@ export default class Events extends EventEmitter {
 
   disableClick() {
     clearTimeout(this.timeout)
+    this.game.mainState.disableClick()
   }
 
   drawing() {

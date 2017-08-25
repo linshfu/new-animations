@@ -26,6 +26,7 @@ export default class WheelLeft extends Phaser.Group {
   }
 
   disableClick() {
+    this.wheel.events.onInputDown.removeAll()
     this.wheel.inputEnabled = false
     this.wheel.input.useHandCursor = false
   }
