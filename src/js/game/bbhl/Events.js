@@ -33,6 +33,7 @@ export default class Events extends EventEmitter {
   }
 
   startAnim(result, isHidden) {
+    this.game.paused = false
     this.game.result = result
     if (this.state.isLoadComplete) {
       this.game.paused = false

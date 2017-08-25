@@ -53,6 +53,14 @@ export default class Animation extends Phaser.Game {
     this.events.emit('GAME_STATE_DRAWING')
   }
 
+  skip() {
+    this.events.emit('GAME_STATE_SKIP')
+  }
+
+  onDraw(callback) {
+    this.drawCallback = callback
+  }
+
   onComplete(callback) {
     this.completeCallback = callback
   }
