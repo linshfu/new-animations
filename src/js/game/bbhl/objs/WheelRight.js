@@ -30,10 +30,17 @@ export default class WheelLeft extends Phaser.Group {
   }
 
   spin() {
+    this.game.disableClick()
+    this.game.drawing()
+  }
+
+  drawing(){
     const tween = this.game.add.tween(this.wheel).to({
       angle: 720 - (36 * get(this.game, 'result.02'))
     }, 3000, Phaser.Easing.Quadratic.Out, true)
 
-    this.disableClick()
+    tween.onComplete.add(() => {
+      this.game.completeCallback && this.game.completeCallback()
+    })
   }
 }

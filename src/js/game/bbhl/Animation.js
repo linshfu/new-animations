@@ -41,7 +41,19 @@ export default class Animation extends Phaser.Game {
     this.events.emit('GAME_STATE_START', result)
   }
 
-  drawing(result) {
+  enableClick(result) {
     this.events.emit('GAME_ENABLE_CLICK', result)
+  }
+
+  disableClick() {
+    this.events.emit('GAME_DISABLE_CLICK')
+  }
+
+  drawing() {
+    this.events.emit('GAME_STATE_DRAWING')
+  }
+
+  onComplete(callback) {
+    this.completeCallback = callback
   }
 }

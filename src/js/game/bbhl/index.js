@@ -8,11 +8,14 @@ export default class Index extends GameIndex {
     super()
 
     this.handleStartBtn = ::this.handleStartBtn
-    this.handleDrawingBtn = ::this.handleDrawingBtn
+    this.handleEnableBtn = ::this.handleEnableBtn
   }
 
   componentDidMount() {
     this.animation = new Animation(750, 500, this.animationDOM)
+    this.animation.onComplete(() => {
+      console.log('drawing complete')
+    })
   }
 
   handleStartBtn() {
@@ -21,8 +24,8 @@ export default class Index extends GameIndex {
     })
   }
 
-  handleDrawingBtn() {
-    this.animation.drawing({
+  handleEnableBtn() {
+    this.animation.enableClick({
       "01": parseInt(this.resultLeftValue.value, 10),
       "02": parseInt(this.resultRightValue.value, 10)
     })
@@ -35,7 +38,7 @@ export default class Index extends GameIndex {
           <input type="number" style={{ width: '100px' }} ref={(r) => {this.resultLeftValue = r}} defaultValue="0" />
           <button onClick={this.handleStartBtn}>Start</button>
           <input type="number" style={{ width: '100px' }} ref={(r) => {this.resultRightValue = r}} defaultValue="5" />
-          <button onClick={this.handleDrawingBtn}>Drawing</button>
+          <button onClick={this.handleEnableBtn}>EnableClick</button>
         </div>
         <div ref={(r) => { this.animationDOM = r }}></div>
       </div>

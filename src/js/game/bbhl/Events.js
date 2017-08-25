@@ -5,6 +5,7 @@ const GAME_STATE_START = 'GAME_STATE_START'
 const GAME_STATE_DRAWING = 'GAME_STATE_DRAWING'
 const GAME_STATE_SKIP = 'GAME_STATE_SKIP'
 const GAME_ENABLE_CLICK = 'GAME_ENABLE_CLICK'
+const GAME_DISABLE_CLICK = 'GAME_DISABLE_CLICK'
 const GAME_UPDATE_DISTRFIRST = 'GAME_UPDATE_DISTRFIRST'
 
 export default class Events extends EventEmitter {
@@ -23,6 +24,7 @@ export default class Events extends EventEmitter {
     this.on(GAME_STATE_SKIP, this.skip)
     this.on(GAME_UPDATE_DISTRFIRST, this.updateDistrFirst)
     this.on(GAME_ENABLE_CLICK, this.enableClick)
+    this.on(GAME_DISABLE_CLICK, this.disableClick)
   }
 
   onLoadComplete() {
@@ -35,7 +37,6 @@ export default class Events extends EventEmitter {
     if (this.state.isLoadComplete) {
       this.game.paused = false
       this.game.state.start('Main')
-      // console.log(JSON.stringify(this.game.result))
     } else {
       setTimeout(() => this.emit(GAME_STATE_START, result), 100)
     }
@@ -44,10 +45,20 @@ export default class Events extends EventEmitter {
   enableClick(result) {
     this.game.result = result
     this.game.mainState.enableClick()
+    this.timeout = setTimeout(() => {
+      console.log('time')
+      this.emit(GAME_DISABLE_CLICK)
+      this.emit(GAME_STATE_DRAWING)
+    }, 3000)
   }
 
-  drawing(opt) {
-    this.game.mainState.drawing(opt)
+  disableClick() {
+    clearTimeout(this.timeout)
+  }
+
+  drawing() {
+    console.log('drawing')
+    this.game.mainState.drawing()
   }
 
   updateDistrFirst(data) {

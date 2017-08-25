@@ -14,7 +14,7 @@ export default class Main extends Phaser.State {
     this.wheelRight = new WheelRight(this.game)
     this.wheelRight.top = 0
     this.wheelRight.left = 400
-    // console.log(JSON.stringify(this.game.result))
+
     this.wheelLeft.spin()
   }
 
@@ -22,8 +22,11 @@ export default class Main extends Phaser.State {
     this.wheelRight.enableClick()
   }
 
-  // drawing(result) {
-  //   this.result = Object.assign({}, this.result, result)
-  //   console.log(this.result)
-  // }
+  disableClick() {
+    this.wheelRight.disableClick()
+  }
+
+  drawing() {
+    this.wheelRight.drawing()
+  }
 }
