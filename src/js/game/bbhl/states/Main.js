@@ -6,6 +6,10 @@ import WheelLeft from '../objs/WheelLeft'
 import WheelRight from '../objs/WheelRight'
 
 export default class Main extends Phaser.State {
+  init(isHidden) {
+    this.isHidden = isHidden
+  }
+
   create() {
     this.wheelLeft = new WheelLeft(this.game)
     this.wheelLeft.top = 0
@@ -15,7 +19,11 @@ export default class Main extends Phaser.State {
     this.wheelRight.top = 0
     this.wheelRight.left = 400
 
-    this.wheelLeft.spin()
+    if (this.isHidden) {
+      this.wheelLeft.open()
+    } else {
+      this.wheelLeft.spin()
+    }
   }
 
   enableClick() {

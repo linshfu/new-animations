@@ -37,8 +37,8 @@ export default class Animation extends Phaser.Game {
     this.state.start('Boot')
   }
 
-  start(result) {
-    this.events.emit('GAME_STATE_START', result)
+  start(result, isHidden) {
+    this.events.emit('GAME_STATE_START', result, isHidden)
   }
 
   enableClick(result) {

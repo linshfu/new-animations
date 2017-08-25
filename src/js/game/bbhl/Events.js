@@ -32,13 +32,13 @@ export default class Events extends EventEmitter {
     this.game.onLoadComplete && this.game.onLoadComplete()
   }
 
-  startAnim(result) {
+  startAnim(result, isHidden) {
     this.game.result = result
     if (this.state.isLoadComplete) {
       this.game.paused = false
-      this.game.state.start('Main')
+      this.game.state.start('Main', true, false, isHidden)
     } else {
-      setTimeout(() => this.emit(GAME_STATE_START, result), 100)
+      setTimeout(() => this.emit(GAME_STATE_START, result, isHidden), 100)
     }
   }
 
