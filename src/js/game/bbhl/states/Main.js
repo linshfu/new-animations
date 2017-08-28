@@ -4,7 +4,7 @@ import { get } from 'lodash'
 
 import WheelLeft from '../objs/WheelLeft'
 import WheelRight from '../objs/WheelRight'
-
+import Distribution from '../objs/Distribution'
 export default class Main extends Phaser.State {
   init(isHidden) {
     this.isHidden = isHidden
@@ -24,6 +24,10 @@ export default class Main extends Phaser.State {
     } else {
       this.wheelLeft.spin()
     }
+    
+    this.distr = new Distribution(this.game)
+    this.distr.top = 395
+    this.distr.left = 70
   }
 
   enableClick() {
@@ -36,5 +40,9 @@ export default class Main extends Phaser.State {
 
   drawing() {
     this.wheelRight.drawing()
+  }
+
+  updateDistr(l, r) {
+    this.distr.setDistr(l, r)
   }
 }

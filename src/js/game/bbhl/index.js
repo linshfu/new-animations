@@ -19,13 +19,12 @@ export default class Index extends GameIndex {
 
   componentDidMount() {
     this.animation = new Animation(750, 500, this.animationDOM)
-
+    
     this.animation.onDraw(() => {
       this.setState({
         isDrawing: true
       })
     })
-
     this.animation.onComplete(() => {
       this.setState({
         isDrawing: false
